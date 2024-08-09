@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Responsive Images</title>
+</head>
+<body>
+    <div class="homer-container"></div>
+    <div class="software-container"></div>
+</body>
+</html>
+/* Common settings for both containers */
+.homer-container, .software-container {
+    width: 625px; /* Default width for homer */
+    height: 625px; /* Default height for homer */
+    background-size: 250%; /* Adjust as necessary */
+    margin: 20px auto;
+}
+
+/* Homer image container specific settings */
+.homer-container {
+    background-image: url('file-Dwi2GlvyhrH6YJ7AxPI06L17.jpg'); /* homer.jpg */
+}
+
+/* Media queries for Homer */
+@media (max-width: 600px) {
+    .homer-container {
+        background-position: top left;
+    }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+    .homer-container {
+        background-position: top right;
+    }
+}
+@media (min-width: 801px) and (max-width: 1000px) {
+    .homer-container {
+        background-position: bottom left;
+    }
+}
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .homer-container {
+        background-position: bottom right;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1400px) {
+    .homer-container {
+        background-position: bottom left;
+    }
+}
+@media (min-width: 1401px) and (max-width: 1600px) {
+    .homer-container {
+        background-position: top right;
+    }
+}
+@media (min-width: 1601px) {
+    .homer-container {
+        background-position: top left;
+    }
+}
+
+/* Software image container specific settings */
+.software-container {
+    width: 640px;
+    height: 480px;
+    background-image: url('file-YxkgHyZElPxkxQwPnIkJyWr0.jpg'); /* software.png */
+    background-size: 200%; /* Adjust as necessary */
+}
+
+/* Media queries for Software */
+@media (max-width: 400px) {
+    .software-container {
+        background-position: bottom right;
+    }
+}
+@media (min-width: 401px) and (max-width: 500px) {
+    .software-container {
+        background-position: bottom center;
+    }
+}
+@media (min-width: 501px) and (max-width: 600px) {
+    .software-container {
+        background-position: bottom left;
+    }
+}
+@media (min-width: 601px) and (max-width: 700px) {
+    .software-container {
+        background-position: center right;
+    }
+}
+@media (min-width: 701px) and (max-width: 800px) {
+    .software-container {
+        background-position: center center;
+    }
+}
+@media (min-width: 801px) and (max-width: 900px) {
+    .software-container {
+        background-position: center left;
+    }
+}
+@media (min-width: 901px) and (max-width: 1000px) {
+    .software-container {
+        background-position: top right;
+    }
+}
+@media (min-width: 1001px) and (max-width: 1100px) {
+    .software-container {
+        background-position: top center;
+    }
+}
+@media (min-width: 1101px) and (max-width: 1200px) {
+    .software-container {
+        background-position: top left;
+    }
+}
+@media (min-width: 1201px) {
+    .software-container {
+        background-position: top left;
+    }
+}
